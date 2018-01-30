@@ -13,8 +13,7 @@ public class CronParser {
 
     public static void main(String[] args) throws Exception {
 
-        System.out.println(args);
-        checkArgument(args.length == 6, "Incorrect number of args");
+        checkArgument(args.length == 6, "Incorrect number of args: " + args.length);
         CronProcessor processor = new CronProcessor();
 
         String[] output = new String[] {

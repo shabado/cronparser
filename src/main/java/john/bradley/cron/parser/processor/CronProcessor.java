@@ -25,6 +25,7 @@ public class CronProcessor {
             cronStrings.add(createCronString(cronArg));
         }
 
+        //TODO: Write everything into an int array, remove duplicates and return in order
         return Joiner.on(" ").join(cronStrings);
     }
 

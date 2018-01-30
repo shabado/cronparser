@@ -32,7 +32,7 @@ public class CronWriter {
     }
 
     public static String getValuesInRange(CronField field, int startValue, int endValue) {
-        //Bug(?) here where if the same value it put in (i.e. 1-1) it'll print it twice. Should probably handle that.
+        //TODO: Should only return one value if range is 0 (i.e. 1-1 should return 1, not 1-1)
         checkArgument(startValue <= field.getMaxValue(), "startValue must be less than max value");
         checkArgument(startValue <= endValue, "startValue must be less than endValue");
         checkArgument(startValue >= field.getMinValue(), "startValue must be greater than min value");
