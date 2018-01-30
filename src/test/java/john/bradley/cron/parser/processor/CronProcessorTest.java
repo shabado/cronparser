@@ -1,7 +1,6 @@
-package processor;
+package john.bradley.cron.parser.processor;
 
 import john.bradley.cron.parser.cronfields.impl.CronMinuteField;
-import john.bradley.cron.parser.processor.CronProcessor;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

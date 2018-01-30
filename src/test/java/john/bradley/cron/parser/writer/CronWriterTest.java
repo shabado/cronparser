@@ -1,7 +1,6 @@
-package writer;
+package john.bradley.cron.parser.writer;
 
 import john.bradley.cron.parser.cronfields.CronField;
-import john.bradley.cron.parser.writer.CronWriter;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
